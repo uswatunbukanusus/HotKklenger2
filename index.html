@@ -1386,7 +1386,7 @@
                 </div>
             </div>
             <ul class="nav-menu" id="nav-menu">
-                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#home" class="nav-link active">Halaman</a></li>
                 <li><a href="#produk" class="nav-link">Menu</a></li>
                 <li><a href="#tentang" class="nav-link">Tentang Kami</a></li>
                 <li><a href="#kontak" class="nav-link">Kontak</a></li>
@@ -1521,7 +1521,7 @@
                     <div class="products-grid" id="products-grid">
                         <div class="product-card">
                             <img src="https://example.com/nasi-uduk.jpg" alt="Nasi Uduk">
-                                                        <h4>Nasi Uduk</h4>
+                            <h4>Nasi Uduk</h4>
                             <p>Nasi uduk dengan lauk ayam dan telur, gurih dan lezat.</p>
                             <div class="product-footer">
                                 <span class="price">Rp 20,000</span>
@@ -1725,32 +1725,32 @@
             notificationPopup.style.display = 'none';
         });
 
-        // Music Popup
-        const musicPopup = document.getElementById('music-popup');
-        const musicYes = document.getElementById('music-yes');
-        const musicNo = document.getElementById('music-no');
-        const youtubePlayer = document.getElementById('youtube-player');
-        const youtubeIframe = document.getElementById('youtube-iframe');
-        const stopMusicBtn = document.getElementById('stop-music-btn');
+        // // Music Popup
+        // const musicPopup = document.getElementById('music-popup');
+        // const musicYes = document.getElementById('music-yes');
+        // const musicNo = document.getElementById('music-no');
+        // const youtubePlayer = document.getElementById('youtube-player');
+        // const youtubeIframe = document.getElementById('youtube-iframe');
+        // const stopMusicBtn = document.getElementById('stop-music-btn');
 
-        musicYes.addEventListener('click', function() {
-            musicPopup.style.display = 'none';
-            // Set YouTube video ID
-            const videoId = '1hNaB1KvW8E'; // From the provided link
-            youtubeIframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&mute=0&loop=1&playlist=${videoId}`;
-            youtubePlayer.style.display = 'block';
-            stopMusicBtn.style.display = 'block';
-        });
+        // musicYes.addEventListener('click', function() {
+        //     musicPopup.style.display = 'none';
+        //     // Set YouTube video ID
+        //     const videoId = '1hNaB1KvW8E'; // From the provided link
+        //     youtubeIframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&mute=0&loop=1&playlist=${videoId}`;
+        //     youtubePlayer.style.display = 'block';
+        //     stopMusicBtn.style.display = 'block';
+        // });
 
-        musicNo.addEventListener('click', function() {
-            musicPopup.style.display = 'none';
-        });
+        // musicNo.addEventListener('click', function() {
+        //     musicPopup.style.display = 'none';
+        // });
 
-        stopMusicBtn.addEventListener('click', function() {
-            youtubeIframe.src = '';
-            youtubePlayer.style.display = 'none';
-            stopMusicBtn.style.display = 'none';
-        });
+        // stopMusicBtn.addEventListener('click', function() {
+        //     youtubeIframe.src = '';
+        //     youtubePlayer.style.display = 'none';
+        //     stopMusicBtn.style.display = 'none';
+        // });
 
         // Intersection Observer untuk animasi fade-in sections
         const observerOptions = {
